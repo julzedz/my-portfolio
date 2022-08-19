@@ -5,6 +5,11 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  margin:auto;
+  width: fit-content;
+}
+
 header {
   position: fixed;
   top: 0;
