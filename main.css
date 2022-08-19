@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-
 }
+
 nav {
   position: fixed;
   top: 0;
@@ -17,7 +17,7 @@ nav {
   justify-content: center;
 }
 
-nav ul{
+nav ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -70,7 +70,7 @@ h1 {
   line-height: 60px;
   text-align: center;
   letter-spacing: 0.37px;
-  color: #172B4D;
+  color: #172B4d;
 }
 
 #title-span {
@@ -82,7 +82,7 @@ h1 {
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  color: #172B4D;
+  color: #172B4d;
   margin-top: 24px;
   width: 800px;
 }
