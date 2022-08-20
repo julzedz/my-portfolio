@@ -10,7 +10,7 @@ body {
   width: 375px;
 }
 
-header {
+  #top {
   position: fixed;
   top: 0;
   width: 375px;
@@ -40,7 +40,6 @@ section {
   padding-top: 100px;
   padding-bottom: 50px;
   margin: 0 auto;
-
 }
 
 #headline {
@@ -81,7 +80,6 @@ h1 {
   margin-top: 58px;
   width: 170px;
   height: 20px;
-  
 }
 
 li {
@@ -107,7 +105,7 @@ a {
   justify-content: center;
 }
 
-hgroup {
+#recent {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,7 +118,6 @@ hgroup {
   border-radius: 24px;
   margin-top: 24px;
   margin-bottom: 24px;
-  
 }
 
 .item {
@@ -147,7 +144,7 @@ hgroup {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
   margin-top: -222px;
 }
@@ -160,6 +157,7 @@ hgroup {
   text-align: center;
   color: #3a4a42;
 }
+
 h3 {
   font-size: 24px;
   font-weight: 600px;
@@ -175,7 +173,6 @@ h3 {
   justify-content: space-between;
   align-self: center;
 }
-
 
 .courses li {
   display: flex;
@@ -199,7 +196,7 @@ button {
   border-radius: 4px;
   border: none;
   background: #36b37f;
-  color: #ffffff;
+  color: #fff;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -229,9 +226,6 @@ button:hover {
   align-items: center;
   gap: 24px;
   justify-content: center;
-}
-
-#about-article {
   background: url(./pics/illustration-\ about\ me-\ mobile.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -308,6 +302,6 @@ button:hover {
   font-weight: 600;
   color: #36b37e;
   letter-spacing: 0.03em;
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
 }
