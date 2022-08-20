@@ -6,8 +6,8 @@
 }
 
 body {
-  margin: auto;
-  width: fit-content;
+  margin: 0 auto;
+  width: 375px;
 }
 
 header {
@@ -34,11 +34,16 @@ main {
 section {
   display: flex;
   flex-direction: column;
-  height: 726px;
+  height: 100%;
   width: 375px;
   align-items: center;
-  padding: 160px 160px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   margin: 0 auto;
+
+}
+
+#headline {
   background: url(./pics/header-illsutration-mobile.png);
   background-repeat: no-repeat;
 }
@@ -52,6 +57,7 @@ h1 {
   text-align: center;
   letter-spacing: 0.37px;
   color: #172b4d;
+  margin: 0 auto;
 }
 
 #title-span {
@@ -75,6 +81,137 @@ h1 {
   margin-top: 58px;
   width: 170px;
   height: 20px;
+  
+}
+
+li {
   list-style: none;
   text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#works h1 {
+  height: 97px;
+}
+
+.work-row {
+  display: grid;
+}
+
+hgroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#indicator {
+  height: 4px;
+  width: 48px;
+  background: #36b37e;
+  border-radius: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  
+}
+
+article {
+  max-width: 331px;
+  padding: 4px 2px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-rows: repeat (6, 1fr);
+  gap: 24px;
+  justify-content: center;
+}
+
+.item {
+  width: 327px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+}
+
+.placeholder {
+  width: 327px;
+}
+
+.text-card {
+  padding: 16px;
+  height: 222px;
+  width: 326px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 8px;
+  margin-top: -222px;
+}
+
+.subtitle {
+  height: 57px;
+  width: 295px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #3a4a42;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 600px;
+  line-height: 32px;
+}
+
+.courses {
+  width: 305px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+}
+
+
+.courses li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #3a4a42;
+  background: #ebf0ee;
+  border-radius: 4px;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  background: #36b37f;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #36b37f;
+  box-shadow: 0 8px 16px;
+  opacity: 0.8;
 }
