@@ -8,6 +8,7 @@
 body {
   margin: 0 auto;
   width: 375px;
+  overflow-x: hidden;
 }
 
 #top {
