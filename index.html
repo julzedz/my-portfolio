@@ -151,22 +151,13 @@
       </li>
     </ul>
     </section>
-    <section>
-      <form
-  action="https://formspree.io/f/meqdoagj"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Get in touch</button>
-</form>
+    <section id="form-container">
+      <form id="form-element" action="https://formspree.io/f/meqdoagj" method="POST">
+        <input class="input-field" type="text" name="name" maxlength="30" placeholder="Full name" required>
+        <input class="input-field" type="email" name="email" placeholder="Email address" required>
+        <textarea id="text-area" class="input-field" name="message" maxlength="500" placeholder="Enter text here" required></textarea>
+        <button id="form-button" type="submit">Get in touch</button>
+      </form>
     </section>
   </main>
 </body>

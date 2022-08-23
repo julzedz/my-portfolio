@@ -306,3 +306,34 @@ button:hover {
   background: #fff;
   border-radius: 8px;
 }
+#form-container {
+  width: 375px;
+  height: 879px;
+}
+#form-element {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  height: 330px;
+}
+
+.input-field {
+  padding: 15px;
+  margin-bottom: 24px;
+  border-radius: 4px;
+  background: #FFFFFF;
+  border: 1px solid #D0D9D4;
+}
+
+.input-field:valid {
+  border: 1px solid #60C095;
+}
+
+#form-button {
+  max-width: fit-content;
+  align-self: center;
+}
+
+#text-area {
+  height: 114px;
+}
