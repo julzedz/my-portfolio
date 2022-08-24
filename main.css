@@ -307,11 +307,13 @@ button:hover {
   background: #fff;
   border-radius: 8px;
 }
+
 #form-container {
   width: 375px;
   padding-top: 0;
   height: fit-content;
 }
+
 #form-element {
   display: flex;
   flex-direction: column;
