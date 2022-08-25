@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -7,15 +9,15 @@
 
 body {
   margin: 0 auto;
-  width: 375px;
+  width: 23rem;
   overflow-x: hidden;
 }
 
 #top {
   position: fixed;
   top: 0;
-  width: 375px;
-  height: 80px;
+  width: 23rem;
+  height: auto;
   background: white;
   padding: 0 10px;
   display: flex;
@@ -29,17 +31,17 @@ body {
 
 main {
   margin-top: 72px;
-  width: 375px;
+  width: 100%;
 }
 
 section {
   display: flex;
   flex-direction: column;
-  height: fit-content;
-  width: 375px;
+  width: 100%;
+  height: auto;
+  padding-top: 6.2em;
+  padding-bottom: 3.1em;
   align-items: center;
-  padding-top: 100px;
-  padding-bottom: 50px;
   margin: 0 auto;
 }
 
@@ -49,11 +51,11 @@ section {
 }
 
 h1 {
-  height: 192px;
-  width: 327px;
+  font-size: 2.5em;
+  width: 87.2%;
+  line-height: 3.2rem;
+  height: auto;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
   text-align: center;
   letter-spacing: 0.37px;
   color: #172b4d;
@@ -66,21 +68,21 @@ h1 {
 
 .text {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
   text-align: center;
   color: #172b4d;
-  margin-top: 58px;
-  width: 327px;
-  height: 164px;
+  font-size: 1.21rem;
+  line-height: 1.8rem;
+  margin-top: 3.6rem;
+  width: 87.2%;
+  height: auto;
 }
 
 .socials {
   display: flex;
   align-items: center;
-  margin-top: 58px;
-  width: 170px;
-  height: 20px;
+  height: auto;
+  width: 45.33%;
+  margin-top: 3.625rem;
   justify-content: center;
 }
 
@@ -93,12 +95,8 @@ a {
   text-decoration: none;
 }
 
-#works h1 {
-  height: 97px;
-}
-
 .work-row {
-  max-width: 331px;
+  max-width: 88.26%;
   padding: 4px 2px;
   margin-top: 30px;
   display: grid;
@@ -114,46 +112,46 @@ a {
 }
 
 #indicator {
+border-radius: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
   height: 4px;
-  width: 48px;
+  width: 3em;
   background: #36b37e;
-  border-radius: 24px;
-  margin-top: 24px;
-  margin-bottom: 24px;
 }
 
 .item {
-  width: 327px;
-  height: fit-content;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid #d0d9d4;
-  border-radius: 8px;
+  width: 99.79%;
+  border-radius: 0.5em;
 }
 
 .placeholder {
-  width: 327px;
+  width: 100%;
 }
 
 .text-card {
-  padding: 16px;
+  padding: 1em;
   height: 222px;
-  width: 326px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   background: #fff;
-  border-radius: 8px;
+  border-radius: .5em;
   margin-top: -222px;
 }
 
 .subtitle {
-  height: 57px;
-  width: 295px;
+  height: auto;
+  width: 90.5%;
   display: flex;
   align-items: center;
   text-align: center;
@@ -162,13 +160,13 @@ a {
 
 h3 {
   font-size: 24px;
-  font-weight: 600px;
+  font-weight: 600;
   line-height: 32px;
 }
 
 .courses {
-  width: 305px;
-  height: 32px;
+  width: 19em;
+  height: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -200,8 +198,8 @@ button {
   background: #36b37f;
   color: #fff;
   font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1em;
+  line-height: 2em;
   cursor: pointer;
 }
 
@@ -215,18 +213,14 @@ button:hover {
   padding-top: 0;
 }
 
-#about-me h1 {
-  height: 48px;
-}
-
 #about-article {
-  max-width: 331px;
+  width: 88.26%;
   padding: 4px 2px;
-  margin-top: 30px;
+  margin-top: 1.8em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 2em;
   justify-content: center;
   background: url(./pics/illustration-\ about\ me-\ mobile.png);
   background-position: center;
@@ -236,15 +230,16 @@ button:hover {
 #about-text {
   color: #42526e;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.3em;
+  line-height: 2em;
   text-align: center;
-  width: 327px;
-  height: 189px;
+  width: 87.2%;
+  height: auto;
 }
 
 .about-row {
-  max-width: 331px;
+  width: 90.26%;
+  height: auto;
   padding: 4px 2px;
   margin-top: 30px;
   display: grid;
@@ -254,7 +249,7 @@ button:hover {
 }
 
 .about-item {
-  width: 327px;
+  width: 100%;
   height: 352px;
   display: flex;
   flex-direction: column;
@@ -267,11 +262,15 @@ button:hover {
   background: #ebf0ee;
 }
 
+.about-img {
+  margin-top: 2em;
+}
+
 .about-item h3 {
-  height: 32px;
-  width: 295px;
+  height: auto;
+  width: 88.3%;
   display: flex;
-  margin-top: 40px;
+  margin-top: 2.5rem;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -279,10 +278,10 @@ button:hover {
 }
 
 .courses-about {
-  width: 271px;
+  width: 91.2%;
   height: 40px;
-  margin-top: 24px;
-  margin-bottom: 72px;
+  margin-top: 1.5em;
+  margin-bottom: 4.5em;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -298,34 +297,34 @@ button:hover {
   align-items: center;
   justify-content: center;
   padding: 8px 12px;
-  font-size: 12px;
+  font-size: 0.7em;
   height: 40px;
-  line-height: 16px;
+  line-height: 1em;
   font-weight: 600;
   color: #36b37e;
   letter-spacing: 0.03em;
   background: #fff;
-  border-radius: 8px;
+  border-radius: 0.5em;
 }
 
 #form-container {
-  width: 375px;
+  width: 100%;
   padding-top: 0;
-  height: fit-content;
+  height: auto;
 }
 
 #form-element {
   display: flex;
   flex-direction: column;
-  width: 327px;
-  height: 330px;
-  margin-top: 58px;
+  width: 87.2%;
+  height: auto;
+  margin-top: 3.6em;
 }
 
 .input-field {
-  padding: 15px;
-  margin-bottom: 24px;
-  border-radius: 4px;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  border-radius: .2em;
   background: #fff;
   border: 1px solid #d0d9d4;
 }
@@ -336,9 +335,9 @@ button:hover {
 
 input::placeholder {
   color: #6b778c;
-  font-size: 15px;
-  font-weight: 400px;
-  line-height: 24px;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
 }
 
 #form-button {
@@ -353,12 +352,11 @@ input::placeholder {
 }
 
 #form-container h2 {
-  height: fit-content;
-  height: 192px;
-  width: 327px;
+  height: auto;
+  width: 87.2%;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 2.5em;
+  line-height: 3.2rem;
   text-align: center;
   letter-spacing: 0.37px;
   color: #172b4d;
@@ -367,18 +365,30 @@ input::placeholder {
 
 textarea::placeholder {
   color: #091e42;
-  font-size: 15px;
+  font-size: 1em;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5em;
 }
 
 #email {
   width: 100%;
   height: 189px;
-  font-size: 20px;
+  font-size: 1.2em;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 2em;
   text-align: center;
   color: #42526e;
-  margin-top: 19px;
+  margin-top: 1.18em;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  /* @media screen and (min-width: 768px){
+  body {
+    width: 100%;
+  }
+} */
