@@ -566,16 +566,16 @@ button {
   height: 2.4em;
 }
 .socials {
-  animation: 5s slide
+  animation: 5s slide;
 }
 
 @keyframes slide {
   0% {
-    margin-left: 300%
+    margin-left: 300%;
   }
 
   100% {
-    margin-left: 0%
+    margin-left: 0%;
+    }
   }
-}
 }
