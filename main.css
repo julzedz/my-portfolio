@@ -253,7 +253,7 @@ button:hover {
 
 .about-item {
   width: 100%;
-  height: 352px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,7 +290,7 @@ button:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: .5em;
   flex-wrap: wrap;
 }
 
@@ -299,9 +299,9 @@ button:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 8px 12px;
+  padding: .5rem .75rem;
   font-size: 0.7em;
-  height: 40px;
+  height: 2.4rem;
   line-height: 1em;
   font-weight: 600;
   color: #36b37e;
@@ -397,16 +397,20 @@ footer {
   }
   
   nav {
+    position: fixed;
+    display: flex;
+    top: 0;
     width: 100%;
     height: 72px;
     background: transparent;
     padding: 0 10px;
+    align-items: center;
     justify-content: center;
   }
   
   nav ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 255px;
     height: 40px;
@@ -421,6 +425,7 @@ footer {
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
     font-weight: 600;
     text-decoration: none;
     color: #344563;
@@ -506,7 +511,7 @@ h3 {
 }
 
 .courses {
-  width: 95%;
+  width: 100%;
   height: auto;
   justify-content: space-evenly;
   margin-bottom: 1em;
@@ -518,6 +523,7 @@ h3 {
   font-size: .7em;
   line-height: 1em;
   border-radius: .25em;
+  text-align: center;
 }
 
 button {
@@ -531,5 +537,30 @@ button {
   background: url(./pics/illustration\ about\ me\ desktops.svg);
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.about-row {
+  gap: 1.5em;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.about-img {
+  margin-top: 2em;
+}
+
+.about-item h3 {
+  margin-top: .5rem;
+}
+
+.courses-about {
+  height: auto;
+  margin-bottom: .5em;
+  padding: 0;
+  gap: .5em;
+}
+
+.courses-about li {
+  padding: .5em .75em;
+  height: 2.4em;
 }
 }
