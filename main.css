@@ -1,6 +1,4 @@
-*,
-*::after,
-*::before {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -9,24 +7,20 @@
 
 body {
   margin: 0 auto;
-  width: 23rem;
+  width: 375px;
   overflow-x: hidden;
 }
 
 #top {
   position: fixed;
   top: 0;
-  width: 23rem;
-  height: auto;
+  width: 375px;
+  height: 80px;
   background: white;
   padding: 0 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-nav ul {
-  display: none;
 }
 
 #logo {
@@ -35,17 +29,17 @@ nav ul {
 
 main {
   margin-top: 72px;
-  width: 100%;
+  width: 375px;
 }
 
 section {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: auto;
-  padding-top: 6.2em;
-  padding-bottom: 3.1em;
+  height: fit-content;
+  width: 375px;
   align-items: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
   margin: 0 auto;
 }
 
@@ -55,11 +49,11 @@ section {
 }
 
 h1 {
-  font-size: 2.5em;
-  width: 87.2%;
-  line-height: 3.2rem;
-  height: auto;
+  height: 192px;
+  width: 327px;
   font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
   text-align: center;
   letter-spacing: 0.37px;
   color: #172b4d;
@@ -72,21 +66,21 @@ h1 {
 
 .text {
   font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
   text-align: center;
   color: #172b4d;
-  font-size: 1.21rem;
-  line-height: 1.8rem;
-  margin-top: 3.6rem;
-  width: 87.2%;
-  height: auto;
+  margin-top: 58px;
+  width: 327px;
+  height: 164px;
 }
 
 .socials {
   display: flex;
   align-items: center;
-  height: auto;
-  width: 45.33%;
-  margin-top: 3.625rem;
+  margin-top: 58px;
+  width: 170px;
+  height: 20px;
   justify-content: center;
 }
 
@@ -99,12 +93,17 @@ a {
   text-decoration: none;
 }
 
+#works h1 {
+  height: 97px;
+}
+
 .work-row {
-  width: 88.26%;
+  max-width: 331px;
   padding: 4px 2px;
   margin-top: 30px;
   display: grid;
-  gap: 1.5em;
+  grid-template-rows: repeat (6, 1fr);
+  gap: 24px;
   justify-content: center;
 }
 
@@ -115,46 +114,46 @@ a {
 }
 
 #indicator {
-  border-radius: 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
   height: 4px;
-  width: 3em;
+  width: 48px;
   background: #36b37e;
+  border-radius: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .item {
-  height: auto;
+  width: 327px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid #d0d9d4;
-  width: 99.79%;
-  border-radius: 0.5em;
+  border-radius: 8px;
 }
 
 .placeholder {
-  width: 100%;
+  width: 327px;
 }
 
 .text-card {
-  padding: 1em;
+  padding: 16px;
   height: 222px;
-  width: 100%;
+  width: 326px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   background: #fff;
-  border-radius: .5em;
+  border-radius: 8px;
   margin-top: -222px;
 }
 
 .subtitle {
-  height: auto;
-  width: 90.5%;
+  height: 57px;
+  width: 295px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -162,14 +161,14 @@ a {
 }
 
 h3 {
-  font-size: 1em;
-  font-weight: 600;
-  line-height: 2em;
+  font-size: 24px;
+  font-weight: 600px;
+  line-height: 32px;
 }
 
 .courses {
-  width: 19em;
-  height: auto;
+  width: 305px;
+  height: 32px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -201,31 +200,33 @@ button {
   background: #36b37f;
   color: #fff;
   font-weight: 500;
-  font-size: 1em;
-  line-height: 2em;
+  font-size: 17px;
+  line-height: 24px;
   cursor: pointer;
-  transition: all 400ms linear;
 }
 
 button:hover {
-  background: #62a28a;
-  box-shadow: 0 .25em .25em;
+  background: #36b37f;
+  box-shadow: 0 8px 16px;
   opacity: 0.8;
-  color: rgb(88, 83, 83);
 }
 
 #about-me {
   padding-top: 0;
 }
 
+#about-me h1 {
+  height: 48px;
+}
+
 #about-article {
-  width: 88.26%;
+  max-width: 331px;
   padding: 4px 2px;
-  margin-top: 1.8em;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2em;
+  gap: 24px;
   justify-content: center;
   background: url(./pics/illustration-\ about\ me-\ mobile.png);
   background-position: center;
@@ -235,16 +236,15 @@ button:hover {
 #about-text {
   color: #42526e;
   font-weight: 400;
-  font-size: 1.3em;
-  line-height: 2em;
+  font-size: 20px;
+  line-height: 32px;
   text-align: center;
-  width: 87.2%;
-  height: auto;
+  width: 327px;
+  height: 189px;
 }
 
 .about-row {
-  width: 90.26%;
-  height: auto;
+  max-width: 331px;
   padding: 4px 2px;
   margin-top: 30px;
   display: grid;
@@ -254,8 +254,8 @@ button:hover {
 }
 
 .about-item {
-  width: 100%;
-  height: auto;
+  width: 327px;
+  height: 352px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -267,15 +267,11 @@ button:hover {
   background: #ebf0ee;
 }
 
-.about-img {
-  margin-top: 2em;
-}
-
 .about-item h3 {
-  height: auto;
-  width: 88.3%;
+  height: 32px;
+  width: 295px;
   display: flex;
-  margin-top: 2.5rem;
+  margin-top: 40px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -283,16 +279,16 @@ button:hover {
 }
 
 .courses-about {
-  width: 91.2%;
+  width: 271px;
   height: 40px;
-  margin-top: 1.5em;
-  margin-bottom: 4.5em;
+  margin-top: 24px;
+  margin-bottom: 72px;
   padding: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: .5em;
+  gap: 8px;
   flex-wrap: wrap;
 }
 
@@ -301,35 +297,35 @@ button:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: .5rem .75rem;
-  font-size: 0.7em;
-  height: 2.4rem;
-  line-height: 1em;
+  padding: 8px 12px;
+  font-size: 12px;
+  height: 40px;
+  line-height: 16px;
   font-weight: 600;
   color: #36b37e;
   letter-spacing: 0.03em;
   background: #fff;
-  border-radius: 0.5em;
+  border-radius: 8px;
 }
 
 #form-container {
-  width: 100%;
+  width: 375px;
   padding-top: 0;
-  height: auto;
+  height: fit-content;
 }
 
 #form-element {
   display: flex;
   flex-direction: column;
-  width: 87.2%;
-  height: auto;
-  margin-top: 3.6em;
+  width: 327px;
+  height: 330px;
+  margin-top: 58px;
 }
 
 .input-field {
-  padding: 1em;
-  margin-bottom: 1.5em;
-  border-radius: .2em;
+  padding: 15px;
+  margin-bottom: 24px;
+  border-radius: 4px;
   background: #fff;
   border: 1px solid #d0d9d4;
 }
@@ -340,9 +336,9 @@ button:hover {
 
 input::placeholder {
   color: #6b778c;
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 1.5em;
+  font-size: 15px;
+  font-weight: 400px;
+  line-height: 24px;
 }
 
 #form-button {
@@ -357,11 +353,12 @@ input::placeholder {
 }
 
 #form-container h2 {
-  height: auto;
-  width: 87.2%;
+  height: fit-content;
+  height: 192px;
+  width: 327px;
   font-weight: 700;
-  font-size: 2.5em;
-  line-height: 3.2rem;
+  font-size: 40px;
+  line-height: 52px;
   text-align: center;
   letter-spacing: 0.37px;
   color: #172b4d;
@@ -370,212 +367,18 @@ input::placeholder {
 
 textarea::placeholder {
   color: #091e42;
-  font-size: 1em;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 1.5em;
+  line-height: 24px;
 }
 
 #email {
   width: 100%;
   height: 189px;
-  font-size: 1.2em;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 2em;
+  line-height: 32px;
   text-align: center;
   color: #42526e;
-  margin-top: 1.18em;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-  @media screen and (min-width: 768px){
-  
-  body {
-    width: 100%;
-  }
-  
-  nav {
-    position: fixed;
-    display: flex;
-    top: 0;
-    width: 100%;
-    height: 72px;
-    background: transparent;
-    padding: 0 10px;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 255px;
-    height: 40px;
-    background: white;
-  }
-  nav li {
-    padding: 10px 10px;
-    list-style: none;
-  }
-  nav a {
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-weight: 600;
-    text-decoration: none;
-    color: #344563;
-    line-height: 20px;
-    padding: 10px;
-    border-radius: 4px;
-  }
-  nav a:hover {
-    background: #ff6163;
-    color: #fff;
-  }
-  
-  #top img {
-    display: none;
-  }
-  
-  #headline {
-    background: url(./pics/Header-llustration-desktop.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-
-  .text {
-    padding-left: 150px;
-    padding-right: 150px;
-    line-height: 1.8em;
-    margin-top: 1.5rem;
-  }
-
-  #indicator {
-    display: none;
-  }
-
-  #works h1 {
-    width: 100%;
-  }
-
-  #works {
-    width: 90.32%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .work-row {
-  width: 100%;
-  margin-top: 30px;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
-}
-
-.item {
-  justify-content: center;
-  border: 1px solid #d0d9d4;
-  width: 29vw;
-  border-radius: 0.5em;
-}
-
-.placeholder {
-  max-width: 100%;
-  height: auto;
-  object-fit: fill;
-  margin-bottom: 6em;
-}
-
-.text-card {
-  padding: 1em;
-  padding-left: 0;
-  padding-right: 0;
-  height: auto;
-  margin-top: -240px;
-}
-
-h3 {
-  line-height: 1em;
-}
-
-.subtitle {
-  height: auto;
-  width: 90.5%;
-  margin-bottom: 1em;
-}
-
-.courses {
-  width: 100%;
-  height: auto;
-  justify-content: space-evenly;
-  margin-bottom: 1em;
-}
-
-.courses li {
-  justify-content: space-between;
-  padding: .7em .3em;
-  font-size: .7em;
-  line-height: 1em;
-  border-radius: .25em;
-  text-align: center;
-}
-
-button {
-  padding: .7em;
-  border-radius: 4px;
-  font-size: 1em;
-  line-height: 1em;
-}
-
-#about-me {
-  background: url(./pics/illustration\ about\ me\ desktops.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.about-row {
-  gap: 1.5em;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.about-img {
-  margin-top: 2em;
-}
-
-.about-item h3 {
-  margin-top: .5rem;
-}
-
-.courses-about {
-  height: auto;
-  margin-bottom: .5em;
-  padding: 0;
-  gap: .5em;
-}
-
-.courses-about li {
-  padding: .5em .75em;
-  height: 2.4em;
-}
-.socials {
-  animation: 5s slide;
-}
-
-@keyframes slide {
-  0% {
-    margin-left: 300%;
-  }
-
-  100% {
-    margin-left: 0%;
-    }
-  }
+  margin-top: 19px;
 }
