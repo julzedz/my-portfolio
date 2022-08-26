@@ -204,12 +204,14 @@ button {
   font-size: 1em;
   line-height: 2em;
   cursor: pointer;
+  transition: all 400ms linear;
 }
 
 button:hover {
-  background: #36b37f;
-  box-shadow: 0 8px 16px;
+  background: #62a28a;
+  box-shadow: 0 .25em .25em;
   opacity: 0.8;
+  color: rgb(88, 83, 83);
 }
 
 #about-me {
