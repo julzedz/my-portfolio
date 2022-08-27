@@ -618,9 +618,7 @@ button {
   margin-right: 0;
 }
 
-
-
-#email {
-  display: none;
-}
+  #email {
+    display: none;
+  }
 }
