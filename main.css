@@ -158,6 +158,7 @@ a {
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
   color: #3a4a42;
 }
 
@@ -204,14 +205,14 @@ button {
   font-size: 1em;
   line-height: 2em;
   cursor: pointer;
-  transition: all 400ms linear;
+  transition: all 200ms linear;
 }
 
 button:hover {
-  background: #62a28a;
+  background: #c5e9da;
   box-shadow: 0 .25em .25em;
   opacity: 0.8;
-  color: rgb(88, 83, 83);
+  color: #172b4d;
 }
 
 #about-me {
@@ -521,8 +522,8 @@ h3 {
 
 .courses li {
   justify-content: space-between;
-  padding: .7em .3em;
-  font-size: .7em;
+  padding: .7em .75em;
+  font-size: 1.2vw;
   line-height: 1em;
   border-radius: .25em;
   text-align: center;
@@ -583,8 +584,8 @@ button {
   #form-container {
     background: url(./pics/illustration-contact-form.svg);
     background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 98% 0%;
+    background-size: 20%;
+    background-position: 99% 88%;
   }
 
   #form-container {
@@ -598,7 +599,7 @@ button {
 #form-container h2 {
   height: auto;
   width: 33vw;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 2.5vw;
   line-height: 3.2rem;
   text-align: center;
@@ -613,7 +614,7 @@ button {
   width: 55.5vw;
   height: auto;
   margin-top: 3.6em;
-  margin-left: 0.6em;
+  margin-left: 2%;
   margin-right: 0;
 }
 
